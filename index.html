@@ -40,25 +40,127 @@
 	<div class="menu fixed-top py-3 d-none d-lg-block">
 		<div class="container">
 			<div class="d-flex align-items-center justify-content-between">
-				<img class="img-fluid" src="assets/i/logo.png" alt="logo">  
-	
-				<ul class="p-0 m-0 d-flex">
-					<li class="mx-3"><a href="" class="scroll-to">Главная</a></li>
-					<!-- <li class="mx-3"><a href="">Наши роботы</a></li> -->
-					<li class="mx-3"><a href="" class="scroll-to">Каталог</a></li>
-					<li class="mx-3"><a href="" class="scroll-to">О нас</a></li>
-					<li class="mx-3"><a href="" class="scroll-to">Оплата та доставка</a></li>
-					<li class="mx-3"><a href="" class="scroll-to">Контакты</a></li>
-				</ul>
+				<a href="">
+					<img class="img-fluid" src="assets/i/logo.png" alt="logo">
+				</a>
+				<nav class="d-flex align-items-center justify-content-around">
+					<ul class="topmenu justify-content-around d-flex">
+						<li><a href="">Главная</a></li>
+						<li><a href="" class="active">Каталог
+								<!--				<span class="fa fa-angle-down"></span>-->
+							</a>
+							<ul class="submenu">
+								<li><a href="">Мужские средства
+										<!--						<span class="fa fa-angle-down"></span>-->
+									</a>
+									<ul class="submenu">
+										<li><a href="">Подкатегория</a></li>
+										<li><a href="">Подкатегория</a></li>
+										<li><a href="">Подкатегория</a></li>
+										<li><a href="">Подкатегория</a></li>
+										<li><a href="">Подкатегория</a></li>
+										<li><a href="">Подкатегория</a></li>
+									</ul>
+								</li>
+								<li><a href="">Женские возбудители</a></li>
+								<li><a href="">Акции</a></li>
+								<li><a href="">Пробники</a></li>
+								<li><a href="">Гели, смазки, спреи</a></li>
+								<li><a href="">Мужские пролонгаторы</a></li>
+								<li><a href="">Презервативы</a></li>
+							</ul>
+						</li>
+						<li><a href="">О нас</a></li>
+						<li><a href="">Оплата и доставка</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</nav>
 	
 				<div class="d-flex justify-content-end icons_top">
 					<a href="tel:+380123456789"><i class="fas fa-phone-volume ml-3"></i></a>
-					<a href=""><i class="fas fa-search ml-3"></i></a>
+					<a href="" class="d-none"><i class="fas fa-search ml-3"></i></a>
 					<a href=""><i class="far fa-user ml-3"></i></a>
-					<a href=""><img class="ml-3" src="assets/i/cart.svg" alt="cart"></a>
+					<a href="" class="relative cart_order mr-3">
+						<div class="absolute">
+							99
+						</div>
+						<img class="ml-3" src="assets/i/cart.svg" alt="cart">
+					</a>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="overlay pt-5">
+	
+		<nav class="overlayMenu d-flex flex-column justify-content-between h90">
+			<div>
+				<div class="d-block mobile_menu">
+					<ul class="ml-4 ul-menu">
+						<li class="mobile_li py-3">
+							<a href="index.html">Головна</a>
+						</li>
+						<li class="mobile_li py-3">
+							Продукція
+							<i class="fa fa-chevron-down"></i>
+							<ul class="p-0">
+								<li class="mobile_li py-3">
+									Мінеральні добрива
+									<span class="icon-arrowr">
+										<span class="path3"></span>
+									</span>
+									<ul>
+										<li class="mobile_li"><a href="">акарициди</a></li>
+										<li class="mobile_li"><a href="">інсектициди</a></li>
+										<li class="mobile_li"><a href="">фунгіциди</a></li>
+										<li class="mobile_li"><a href="">прилипачі</a></li>
+										<li class="mobile_li"><a href="">регулятори та стимулятори росту</a></li>
+									</ul>
+								</li>
+	
+								<li class="mobile_li py-3">Засоби захисту рослин</li>
+							</ul>
+						</li>
+	
+						<li class="mobile_li py-3">
+							Послуги
+							<span class="icon-arrowr">
+								<span class="path3"></span>
+							</span>
+							<ul class="p-0">
+								<li class="mobile_li py-3">Транспортування безводного аміаку </li>
+								<li class="mobile_li py-3">Внесення в ґрунт безводного аміаку </li>
+							</ul>
+						</li>
+						<li class="mobile_li py-3">
+							<a href="">Про нас</a>
+						</li>
+						<li class="mobile_li py-3">
+							<a href="">Контакти </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	
+	</div>
+	
+	<div class=" fon_top_contacts d-lg-none red d-relative d-flex align-items-center justify-content-between">
+		<a href="">
+			<img src="assets/i/logo.png" alt="" class="img-fluid ml-3">
+		</a>
+		<div class="d-flex justify-content-end icons_top mr-5 pr-4">
+			<a href="tel:+380123456789"><i class="fas fa-phone-volume ml-3"></i></a>
+			<a href="" class="d-none"><i class="fas fa-search ml-3"></i></a>
+			<a href=""><i class="far fa-user ml-3"></i></a>
+			<a href="" class="relative cart_order mr-3">
+				<div class="absolute">
+					99
+				</div>
+				<img class="ml-3" src="assets/i/cart.svg" alt="cart">
+			</a>
+		</div>
+	
+		<div class="navBurger d-lg-none" role="navigation" id="navToggle"></div>
 	</div>
 	<div class="slider relative">
 	    <div class="slider__box relative d-flex justify-content-center">
@@ -248,18 +350,229 @@
 	        </div>
 	    </div>
 	</div>
-	<div class="why py-lg-5">
+	<div class="why py-lg-5 py-3">
 	    <div class="container">
 	        <h2 class="pb-2">Почему мы</h2>
-	        <div class="row">
-	
+	        <div class="row mt-5">
+	            <div class="col-lg-3">
+	                <div class="why__box p-2 d-flex flex-column justify-content-center align-items-center">
+	                    <img src="assets/i/star.svg" alt="star">
+	                    <h3 class="text-center my-3">Гарантия качества</h3>
+	                    <div class="lin_min w-100 mb-3"></div> 
+	                    <p>На нашем сайте представлен широкий выбор средств для повышения мужской силы. Все препараты оригинальны и сертифицированы.</p>
+	                </div>
+	            </div>
+	            <div class="col-lg-3">
+	                <div class="why__box p-2 d-flex flex-column justify-content-center align-items-center">
+	                    <img src="assets/i/man.svg" alt="man">
+	                    <h3 class="text-center my-3">Отличный сервис</h3>
+	                    <div class="lin_min w-100 mb-3"></div> 
+	                    <p>Здесь вы найдете широкий выбор препаратов, которые вернут чувствительность и подарят яркие ощущения от интимной близости.</p> 
+	                </div>
+	            </div>
+	            <div class="col-lg-3">
+	                <div class="why__box p-2 d-flex flex-column justify-content-center align-items-center">
+	                    <img src="assets/i/best-price.svg" alt="price">
+	                    <h3 class="text-center my-3">Привлекательные цены</h3>
+	                    <div class="lin_min w-100 mb-3"></div> 
+	                    <p>В нашем интернет-магазине можно купить женские и мужские возбудители по самым выгодным ценам.</p> 
+	                </div>
+	            </div>
+	            <div class="col-lg-3">
+	                <div class="why__box p-2 d-flex flex-column justify-content-center align-items-center">
+	                    <img src="assets/i/delivery-time.svg" alt="delivery-time">
+	                    <h3 class="text-center my-3">Гарантия доставки</h3>
+	                    <div class="lin_min w-100 mb-3"></div> 
+	                    <p>Товар всегда в наличии. При заказе средств в нашем интернет-магазине мы гарантируем доставку в любой регион Украины.</p> 
+	                </div>
+	            </div>
 	        </div>
 	    </div>
 	</div>
+	<div class="new py-lg-5 py-3 product_news__slider">
+	    <div class="container">
+	        <div class="d-flex align-items-center justify-content-between down_line mb-lg-4 pb-2">
+	            <h2>Популярные</h2>
+	            <a href="">Смотреть все <i class="fas fa-angle-right ml-1"></i></a>
+	        </div>
+	        <div class="row">
+	            <div class="col-lg-12 slider__new px-0">
+	
+	                <div class="card ">
+	                    <div class="news_stick">
+	                        New
+	                    </div>
+	                    <div class="sale_stick">
+	                        Sale
+	                    </div>
+	                    <a href="">
+	                        <img class="w-100" src="assets/i/product 1.png"
+	                            alt="Stud 100">
+	                    </a>
+	                    <div class="card-body">
+	                        <div class="d-flex flex-column justify-content-between h-100">
+	                            <a href="">
+	                                <h5 class="card-title">Stud 100</h5>
+	                            </a>
+	                            <p>Препарат для замедления преждевременной эякуляции у мужчины, 12 г</p>
+	                            <div class="d-flex justify-content-between  bottom">
+	                                <div class="d-flex justify-content-center flex-column">
+	                                    <div class="old_price">900 грн</div>
+	                                    <div class="price">800 грн</div>
+	                                </div>
+	
+	                            </div>
+	                        </div>
+	                        <div class="line my-3"></div>
+	                        <div class="d-flex align-items-center justify-content-between">
+	                            <a href="" class="btn_blue">Купить в 1 клик</a>
+	                            <a href="" class="cart_btn d-flex align-items-center justify-content-center"><img src="assets/i/cart_white.svg" alt="cart"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="card ">
+	                    <div class="hit_stick">
+	                        HIT
+	                    </div>
+	                    <a href="">
+	                        <img class="w-100" src="assets/i/product 2.png"
+	                            alt="Stud 100">
+	                    </a>
+	                    <div class="card-body">
+	                        <div class="d-flex flex-column justify-content-between h-100">
+	                            <a href="">
+	                                <h5 class="card-title">Комплект SilkTouch: топ и шорты</h5>
+	                            </a>
+	                            <p>
+	                                Акуловая эссенция SHARK extract принципиально новый препарат для мужской силы
+	                            </p>
+	                            <div class="d-flex justify-content-between  bottom">
+	                                <div class="d-flex justify-content-center flex-column">
+	                                    <!-- <div class="old_price">900 грн</div> -->
+	                                    <div class="price">800 грн</div>
+	                                </div> 
+	                             </div>
+	                        </div>
+	                        <div class="line my-3"></div>
+	                        <div class="d-flex align-items-center justify-content-between">
+	                            <a href="" class="btn_blue">Купить в 1 клик</a>
+	                            <a href="" class="cart_btn d-flex align-items-center justify-content-center"><img src="assets/i/cart_white.svg" alt="cart"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="card ">
+	                    <a href="">
+	                        <img class="w-100" src="assets/i/product 3.png"
+	                            alt="Stud 100">
+	                    </a>
+	                    <div class="card-body">
+	
+	                        <div class="d-flex flex-column justify-content-between h-100">
+	                            <a href="">
+	                                <h5 class="card-title">АНАЛЬНЫЙ ЛУБРИКАНТ</h5>
+	                            </a>
+	                            <p>Идеальный любрикант для анального секса.</p>
+	                            <div class="d-flex justify-content-between  bottom">
+	                                <div class="d-flex justify-content-center flex-column">
+	                                    <!-- <div class="old_price">900 грн</div> -->
+	                                    <div class="price">800 грн</div>
+	                                </div>
+	
+	                            </div>
+	                        </div>
+	                        <div class="line my-3"></div>
+	                        <div class="d-flex align-items-center justify-content-between">
+	                            <a href="" class="btn_blue">Купить в 1 клик</a>
+	                            <a href="" class="cart_btn d-flex align-items-center justify-content-center"><img src="assets/i/cart_white.svg" alt="cart"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="card ">
+	                    <a href="">
+	                        <img class="w-100" src="assets/i/product 4.png"
+	                            alt="Stud 100">
+	                    </a>
+	                    <div class="card-body">
+	
+	                        <div class="d-flex flex-column justify-content-between h-100">
+	                            <a href="">
+	                                <h5 class="card-title">Energy Drops</h5>
+	                            </a>
+	                            <p>Возбуждающие капли ДЛЯ ДВОИХ</p>
+	                            <div class="d-flex justify-content-between  bottom">
+	                                <div class="d-flex justify-content-center flex-column">
+	                                    <!-- <div class="old_price">900 грн</div> -->
+	                                    <div class="price">800 грн</div>
+	                                </div>
+	
+	                            </div>
+	                        </div>
+	                        <div class="line my-3"></div>
+	                        <div class="d-flex align-items-center justify-content-between">
+	                            <a href="" class="btn_blue">Купить в 1 клик</a>
+	                            <a href="" class="cart_btn d-flex align-items-center justify-content-center"><img src="assets/i/cart_white.svg" alt="cart"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="card ">
+	                    <a href="">
+	                        <img class="w-100" src="assets/i/product 4.png"
+	                            alt="Stud 100">
+	                    </a>
+	                    <div class="card-body">
+	
+	                        <div class="d-flex flex-column justify-content-between h-100">
+	                            <a href="">
+	                                <h5 class="card-title">Energy Drops</h5>
+	                            </a>
+	                            <p>Возбуждающие капли ДЛЯ ДВОИХ</p>
+	                            <div class="d-flex justify-content-between  bottom">
+	                                <div class="d-flex justify-content-center flex-column">
+	                                    <!-- <div class="old_price">900 грн</div> -->
+	                                    <div class="price">800 грн</div>
+	                                </div>
+	
+	                            </div>
+	                        </div>
+	                        <div class="line my-3"></div>
+	                        <div class="d-flex align-items-center justify-content-between">
+	                            <a href="" class="btn_blue">Купить в 1 клик</a>
+	                            <a href="" class="cart_btn d-flex align-items-center justify-content-center"><img src="assets/i/cart_white.svg" alt="cart"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<footer class="pb-2 pt-3">
+	    <div class="container">
+	        <div class="d-flex align-items-center justify-content-between">
+	            <img class="foot-img img-fluid" src="assets/i/logo2.png" alt="logo">
+	
+	            <ul class="p-0 m-0 d-md-flex d-none">
+	                <li class="mx-3"><a href="" class="scroll-to">Главная</a></li>
+	                <!-- <li class="mx-3"><a href="">Наши роботы</a></li> -->
+	                <li class="mx-3"><a href="" class="scroll-to">О нас</a></li>
+	                <li class="mx-3"><a href="" class="scroll-to">Оплата та доставка</a></li>
+	                <li class="mx-3"><a href="" class="scroll-to">Контакты</a></li>
+	            </ul>
+	
+	            <div class="d-flex justify-content-end icons_top">
+	                <a href="" class="btn-blue px-3 py-2">Заказать звонок</a>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="copyright my-3 pt-3">
+	        <div class="container">
+	            DARYTIBETA©2020. Design <a href="http://sfdevelop.com/">SFdevelop</a>
+	        </div>
+	    </div>
+	</footer>
 
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<!--JS-->
 	<script src="assets/js/main.js"></script>
 </body>

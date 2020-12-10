@@ -275,6 +275,365 @@
     opacity: 0.75;
 }
 
+nav {
+    background: transpered;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+}
+
+.topmenu > li {
+    float: left;
+    position: relative;
+}
+
+.topmenu > li:first-child {
+    border-left: 0;
+}
+
+.topmenu > li > a {
+    padding: 0px 15px;
+    font-size: 17px;
+    color: #FEFDFD;
+}
+
+.topmenu > li > a.active,
+.submenu a:hover {
+    color: #333;
+}
+
+.topmenu .fa,
+.submenu .fa {
+    margin-left: 5px;
+    color: inherit;
+}
+
+.submenu {
+    position: absolute;
+    z-index: 5;
+    min-width: 200px;
+    background: rgba(255, 255, 255, 0.9);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li a {
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-bottom: 1px solid #CBCBCC;
+}
+
+.submenu .submenu {
+    position: absolute;
+    left: 100%;
+    top: -1px;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+}
+
+nav li:hover > .submenu {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+}
+
+.navBurger {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    background: #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-clip: content-box;
+    width: 30px;
+    height: 24px;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    z-index: 9999;
+}
+
+.navBurger a {
+    color: #fff !important;
+}
+
+.navBurger:before, .navBurger:after {
+    content: "";
+    position: absolute;
+    background: #000;
+    height: 2px;
+    width: 100%;
+    right: 0;
+    will-change: rotate;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navBurger:before {
+    top: -10px;
+}
+
+.navBurger:after {
+    bottom: -10px;
+    width: 90%;
+}
+
+.navBurger.active {
+    background: transparent;
+    background-clip: content-box;
+}
+
+.navBurger.active:before {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: 0;
+    background: #eee;
+    width: 110%;
+}
+
+.navBurger.active:after {
+    bottom: 0;
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    background: #eee;
+    width: 110%;
+}
+
+.overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    visibility: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    z-index: 8888;
+}
+
+.overlay.open {
+    opacity: 0.99;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    overflow-y: auto;
+}
+
+.overlay.open li {
+    display: block;
+    -webkit-animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards;
+    animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    -webkit-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+    -webkit-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
+}
+
+.overlay.open li:nth-of-type(2) {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.overlay.open li:nth-of-type(3) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.overlay.open li:nth-of-type(4) {
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.overlay.open li:nth-of-type(5) {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.overlay.open li:nth-of-type(6) {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.overlayMenu {
+    position: absolute;
+    text-align: right;
+    top: 70px;
+    margin-right: 30px;
+    text-align: left;
+    width: 94%;
+    overflow: hidden;
+}
+
+.overlayMenu ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+    position: relative;
+    height: 100%;
+    text-align: left !important;
+}
+
+.overlayMenu ul li {
+    display: block;
+    position: relative;
+    opacity: 0;
+    width: 100%;
+    text-align: left !important;
+}
+
+.overlayMenu ul li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px !important;
+    margin: 5px 0;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    text-align: left !important;
+}
+
+.locked {
+    overflow: hidden;
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 50px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 50px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.mobile_menu .ul-menu {
+    position: relative;
+    display: block;
+    overflow: scroll;
+}
+
+.mobile_menu .icon-arrowr {
+    float: right;
+    margin-top: 15px;
+    font-size: 35px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin-right: 35px;
+}
+
+.mobile_menu ul {
+    width: 100%;
+    margin: 3px;
+}
+
+.mobile_menu ul .mobile_li {
+    border-bottom: 1px solid red;
+    width: 100%;
+    color: #fff;
+    font-family: "Montserrat Alternates";
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.mobile_menu ul .mobile_li:hover {
+    cursor: pointer;
+}
+
+.mobile_menu ul ul {
+    display: none;
+}
+
+.mobile_menu ul ul .icon-arrowr {
+    margin-right: 0px;
+}
+
+.mobile_menu ul ul li {
+    padding-left: 10px;
+}
+
+.mobile_menu ul ul li:last-child {
+    border-bottom: none;
+}
+
 @font-face {
     font-family: "Segoe Print";
   src: url("../fonts/Segoe.ttf");
@@ -312,6 +671,28 @@ h2 {
     color: #014B85;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .foot-img {
+        width: 100px !important;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+
+    footer .btn-blue {
+        font-size: 14px !important;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .topmenu > li > a {
+        font-size: 16px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     .slider .text-1,
   .slider .text-2 {
@@ -324,6 +705,18 @@ h2 {
 
     .slider .btn {
         font-size: 95%;
+    }
+
+    .foot-img {
+        width: 80px !important;
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+
+    footer .btn-blue {
+        font-size: 10px !important;
     }
 }
 
@@ -373,6 +766,18 @@ h2 {
     .new h2 {
         font-size: 150%;
     }
+
+    footer a {
+        font-size: 12px;
+    }
+
+    footer .btn-blue {
+        font-size: 12px !important;
+    }
+
+    .foot-img {
+        width: 120px !important;
+    }
 }
 
 a {
@@ -382,6 +787,14 @@ a {
 a:hover {
     text-decoration: none;
     color: #014B85;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
 }
 
 .btn_blue {
@@ -422,6 +835,21 @@ a:hover {
     color: #014B85 !important;
 }
 
+.red {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    height: 52px;
+    z-index: 1;
+    width: 100%;
+}
+
+.red img {
+    max-width: 150px;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
 .menu {
     background: #fff;
     -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -435,6 +863,26 @@ a:hover {
 
 .menu ul li a {
     color: #333;
+}
+
+.cart_order .absolute {
+    right: -10px;
+    bottom: 6px;
+    background: #fff;
+    font-size: 10px;
+    border: #014B85 1px solid;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .icons_top {
@@ -665,4 +1113,57 @@ a:hover {
 .why h2 {
     border-bottom: 1px solid #ccc;
     color: #fff;
+}
+
+.why h3 {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.why .lin_min {
+    width: 30px !important;
+    border-top: 1px solid #00BFF6;
+}
+
+.why p {
+    text-align: center;
+    color: #fff;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #014B85;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer .btn-blue {
+    color: #fff !important;
+    border: 1px solid #fff;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+footer .copyright {
+    border-top: 1px solid #fff;
+    font-size: 13px;
+    color: #fff;
+}
+
+footer .copyright a,
+    footer .copyright a:hover {
+    color: #fff !important;
+}
+
+footer a:hover {
+    color: #fff !important;
 }
