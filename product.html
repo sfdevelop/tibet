@@ -45,7 +45,7 @@
 				</a>
 				<nav class="d-flex align-items-center justify-content-around">
 					<ul class="topmenu justify-content-around d-flex">
-						<li><a href="">Главная</a></li>
+						<li><a href="index.html">Главная</a></li>
 						<li><a href="" class="active">Каталог
 								<!--				<span class="fa fa-angle-down"></span>-->
 							</a>
@@ -80,7 +80,7 @@
 					<a href="tel:+380123456789"><i class="fas fa-phone-volume ml-3"></i></a>
 					<a href="" class="d-none"><i class="fas fa-search ml-3"></i></a>
 					<a href=""><i class="far fa-user ml-3"></i></a>
-					<a href="" class="relative cart_order mr-3">
+					<a href="cart.html" class="relative cart_order mr-3">
 						<div class="absolute">
 							99
 						</div>
@@ -159,9 +159,21 @@
 	
 		<div class="navBurger d-lg-none" role="navigation" id="navToggle"></div>
 	</div>
-	<div class="product_item py-lg-5 py-3 mb-lg-5">
+	<div class="container-fluid bg-blue"> 
+	    <div class="container ">
+	        <nav aria-label="breadcrumb">
+	            <ol class="breadcrumb mb-0 pl-0">
+	                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+	                <li class="breadcrumb-item"><a href="#">Категория</a></li>
+	                <li class="breadcrumb-item active" aria-current="page">Страница</li> 
+	            </ol>
+	        </nav>
+	    </div>
+	</div>
+	<div class="product_item pb-lg-2 py-3 mb-lg-5">
 	    <div class="container">
-	        <div class="row">
+	        <h2 class="w-100 d-block pb-3">Shark extract</h2>
+	        <div class="row mt-3">
 	            <div class="col-lg-6">
 	                <div class="stikly product_slider">
 	                    <div class="slider_vacansie__box">
@@ -266,66 +278,159 @@
 	                            <span class="page">возможна</span>
 	                        </li>
 	                    </ul>
-	                    <small>Количество</small>
-	
-	                    <div class="d-flex align-items-center mt-2">
-	                        <section class="mr-3">
-	                            <div class="stepper stepper--style-2 js-spinner">
-	                                <input type="number" min="0" max="100" step="1" value="0" class="stepper__input"
-	                                    data-stepper-debounce="400">
-	                                <div class="stepper__controls">
-	                                    <button class="plus" type="button" spinner-button="up">+</button>
-	                                    <button class="minus" type="button" spinner-button="down">-</button>
-	                                </div>
+	                </div>
+	                <div class="buy mt-4 d-flex align-items-center flex-wrap flex-lg-nowrap">
+	                    <div class="mr-3">
+	                        <div class="stepper stepper--style-2 js-spinner">
+	                            <input type="number" min="0" max="100" step="1" value="0" class="stepper__input"
+	                                data-stepper-debounce="400">
+	                            <div class="stepper__controls">
+	                                <button class="plus" type="button" spinner-button="up">+</button>
+	                                <button class="minus" type="button" spinner-button="down">-</button>
 	                            </div>
-	                        </section>
-	                        <div class="p-2 radius d-flex align-items-center" data-toggle="tooltip" data-placement="top"
-	                            title="Добавить в избранное">
-	                            <svg xmlns="http://www.w3.org/2000/svg" width="21.851" height="19.441"
-	                                viewBox="0 0 21.851 19.441" style="stroke: #C5C5C5; fill: #C5C5C5;">
-	                                <path id="_1077035" data-name="1077035"
-	                                    d="M10.926,19.441a1.281,1.281,0,0,1-.845-.317c-.883-.772-1.734-1.5-2.485-2.137l0,0a46.209,46.209,0,0,1-5.425-5.092A8.133,8.133,0,0,1,0,6.567,6.83,6.83,0,0,1,1.734,1.9,5.876,5.876,0,0,1,6.1,0,5.5,5.5,0,0,1,9.538,1.185a7.024,7.024,0,0,1,1.388,1.449,7.025,7.025,0,0,1,1.388-1.449A5.5,5.5,0,0,1,15.747,0a5.876,5.876,0,0,1,4.371,1.9,6.829,6.829,0,0,1,1.733,4.664,8.132,8.132,0,0,1-2.167,5.324,46.2,46.2,0,0,1-5.425,5.092c-.752.641-1.6,1.367-2.489,2.141a1.282,1.282,0,0,1-.845.317ZM6.1,1.28a4.61,4.61,0,0,0-3.43,1.49,5.556,5.556,0,0,0-1.395,3.8,6.843,6.843,0,0,0,1.873,4.507,45.473,45.473,0,0,0,5.27,4.935l0,0c.754.642,1.608,1.371,2.5,2.148.895-.779,1.75-1.508,2.505-2.152A45.484,45.484,0,0,0,18.7,11.074a6.844,6.844,0,0,0,1.873-4.507,5.556,5.556,0,0,0-1.395-3.8,4.61,4.61,0,0,0-3.43-1.49A4.245,4.245,0,0,0,13.1,2.2,6.211,6.211,0,0,0,11.62,3.907a.808.808,0,0,1-1.388,0A6.205,6.205,0,0,0,8.755,2.2,4.245,4.245,0,0,0,6.1,1.28Zm0,0"
-	                                    transform="translate(0)" />
-	                            </svg>
-	                        </div>
-	                        <div class="p-2 radius d-flex align-items-center" data-toggle="tooltip" data-placement="top"
-	                            title="Добавить в сравнение">
-	                            <svg xmlns="http://www.w3.org/2000/svg" width="23.621" height="20.26"
-	                                viewBox="0 0 23.621 20.26" style="stroke: #C5C5C5; fill: #C5C5C5;">
-	                                <path id="_73991-1" data-name="73991-1"
-	                                    d="M23.565,27.191l-3.409-6.83a.569.569,0,0,0-.451-.92H13.264a.69.69,0,0,0,.477-.656h0a.69.69,0,0,0-.69-.69H12.8a1.606,1.606,0,1,0-1.974,0h-.254a.69.69,0,0,0-.69.69h0a.69.69,0,0,0,.477.656H3.983v0H3.917A.57.57,0,0,0,3.5,20.4L.058,27.3a.548.548,0,0,0-.05.335.35.35,0,0,0,0,.065,3.993,3.993,0,0,0,7.949,0,.361.361,0,0,0,0-.066.548.548,0,0,0-.05-.335L4.553,20.585H11.04V33.773H5.72a1.159,1.159,0,0,0-1.159,1.159.552.552,0,0,0,.552.552h13.4a.552.552,0,0,0,.552-.552A1.159,1.159,0,0,0,17.9,33.773h-5.32V20.585h6.431l-3.3,6.607a.548.548,0,0,0-.05.335.35.35,0,0,0,0,.065,3.993,3.993,0,0,0,7.949,0,.361.361,0,0,0,0-.066A.548.548,0,0,0,23.565,27.191Zm-22.281.125,2.7-5.405,2.7,5.405Zm15.659-.11,2.7-5.405,2.7,5.405Z"
-	                                    transform="translate(-0.001 -15.224)" />
-	                            </svg>
 	                        </div>
 	                    </div>
+	                    <div class="p-2 radius d-flex align-items-center" 
+	                    title="Добавить в избранное">
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="21.851" height="19.441"
+	                        viewBox="0 0 21.851 19.441" style="stroke: #C5C5C5; fill: #C5C5C5;">
+	                        <path id="_1077035" data-name="1077035"
+	                            d="M10.926,19.441a1.281,1.281,0,0,1-.845-.317c-.883-.772-1.734-1.5-2.485-2.137l0,0a46.209,46.209,0,0,1-5.425-5.092A8.133,8.133,0,0,1,0,6.567,6.83,6.83,0,0,1,1.734,1.9,5.876,5.876,0,0,1,6.1,0,5.5,5.5,0,0,1,9.538,1.185a7.024,7.024,0,0,1,1.388,1.449,7.025,7.025,0,0,1,1.388-1.449A5.5,5.5,0,0,1,15.747,0a5.876,5.876,0,0,1,4.371,1.9,6.829,6.829,0,0,1,1.733,4.664,8.132,8.132,0,0,1-2.167,5.324,46.2,46.2,0,0,1-5.425,5.092c-.752.641-1.6,1.367-2.489,2.141a1.282,1.282,0,0,1-.845.317ZM6.1,1.28a4.61,4.61,0,0,0-3.43,1.49,5.556,5.556,0,0,0-1.395,3.8,6.843,6.843,0,0,0,1.873,4.507,45.473,45.473,0,0,0,5.27,4.935l0,0c.754.642,1.608,1.371,2.5,2.148.895-.779,1.75-1.508,2.505-2.152A45.484,45.484,0,0,0,18.7,11.074a6.844,6.844,0,0,0,1.873-4.507,5.556,5.556,0,0,0-1.395-3.8,4.61,4.61,0,0,0-3.43-1.49A4.245,4.245,0,0,0,13.1,2.2,6.211,6.211,0,0,0,11.62,3.907a.808.808,0,0,1-1.388,0A6.205,6.205,0,0,0,8.755,2.2,4.245,4.245,0,0,0,6.1,1.28Zm0,0"
+	                            transform="translate(0)" />
+	                    </svg> 
 	                </div>
-	                <div class="buy mt-4">
-	                    <a class="btn btn-lg mr-sm-3">Купить</a>
-	                    <a data-toggle="modal" data-target="#one" class="btn btn-lg btn-certificate">Купить в 1 клик</a>
+	                   
+	                    <a href="" class=" btn-buy mx-3">Купить в 1 клик</a> 
+	
+	                    <a class="btn btn-lg mr-sm-3 px-4">Купить</a> 
 	                </div>
 	            </div>
 	        </div>
-	        <div class="col">
+	        <div class="col mt-4"> 
 	            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
 	                <li class="nav-item">
 	                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-	                        aria-controls="pills-home" aria-selected="true">Home</a>
+	                        aria-controls="pills-home" aria-selected="true">Описание</a>
 	                </li>
 	                <li class="nav-item">
 	                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-	                        aria-controls="pills-profile" aria-selected="false">Profile</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
-	                        aria-controls="pills-contact" aria-selected="false">Contact</a>
+	                        aria-controls="pills-profile" aria-selected="false">Отзывы (3)</a>
 	                </li>
 	            </ul>
 	            <div class="tab-content" id="pills-tabContent">
 	                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-	                    ...1</div>
-	                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">..2.
+	
+	                  <p>Ночная рубашка черного цвета. Приталенный силуэт, бретели регулируются, по спинке резиночка. В комплекте идут
+	                      поролоновые чашечки.
+	                  </p>
+	                  <p>
+	                      Есть в размерах M, L, XL. Состав шелк 50%, вискоза 45%, эластин 5%</p>
+	                  <p> Пижама маломерит на размер! Мы поможем подобрать ваш размер!</p>
+	                  <p>Ночная рубашка черного цвета. Приталенный силуэт, бретели регулируются, по спинке резиночка. В комплекте идут
+	                      поролоновые чашечки.
+	                  </p>
+	                  <p>
+	                      Есть в размерах M, L, XL. Состав шелк 50%, вискоза 45%, эластин 5%</p>
+	                  <p> Пижама маломерит на размер! Мы поможем подобрать ваш размер!</p>
+	                    
 	                </div>
-	                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">..3.
+	                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+	                    <div class="tabs_comment__box my-3 pb-3">
+	                        <div class="d-flex justify-content-between align-items-center pb-3">
+	                            <h5 class="p-0 m-0">Александра</h5>
+	                            <div class="rating mr-3 mr-lg-0 ">
+	                                <span class="fa fa-star checked"></span>
+	                                <span class="fa fa-star checked"></span>
+	                                <span class="fa fa-star checked"></span>
+	                                <span class="fa fa-star"></span>
+	                                <span class="fa fa-star"></span>
+	                            </div>
+	                        </div>
+	                        <p>Замечательная пижамка на лето, отлично подходит, размер соответствует, приятная к телу, качество хорошее,
+	                            доставка быстрая.</p>
+	                        <small>15/08/2020</small>
+	                    </div>
+	                    <div class="tabs_comment__box my-3 pb-3">
+	                        <div class="d-flex justify-content-between align-items-center pb-3">
+	                            <h5 class="p-0 m-0">Ольга</h5>
+	                            <div class="rating mr-3 mr-lg-0 ">
+	                                <span class="fa fa-star checked"></span>
+	                                <span class="fa fa-star checked"></span>
+	                                <span class="fa fa-star checked"></span>
+	                                <span class="fa fa-star"></span>
+	                                <span class="fa fa-star"></span>
+	                            </div>
+	                        </div>
+	                        <p>Приятная на ощупь. Симпатичная расцветка. Не проверили в носке, т.к. купили сразу 2 пижамы этой фирмы, синюю
+	                            оставили на осень.</p>
+	                        <small>15/08/2020</small>
+	                    </div>
+	                    <div class="tabs_comment__box my-3 pb-3">
+	                        <div class="d-flex justify-content-between align-items-center pb-3">
+	                            <h5 class="p-0 m-0">Илона</h5>
+	                            <div class="rating mr-3 mr-lg-0 ">
+	                                <span class="fa fa-star checked"></span>
+	                                <span class="fa fa-star checked"></span>
+	                                <span class="fa fa-star checked"></span>
+	                                <span class="fa fa-star"></span>
+	                                <span class="fa fa-star"></span>
+	                            </div>
+	                        </div>
+	                        <p>Замечательная пижама.
+	                            Ткань очень приятная на ощупь
+	                            Товар полностью соответствует заявленным характеристикам</p>
+	                        <small>15/08/2020</small>
+	                    </div>
+	                    <div class="tabs_comment__box my-3 pb-3">
+	                        <div class="d-flex justify-content-between align-items-center pb-3">
+	                            <h5 class="p-0 m-0">Карина</h5>
+	                            <div class="rating mr-3 mr-lg-0 ">
+	                                <span class="fa fa-star checked"></span>
+	                                <span class="fa fa-star checked"></span>
+	                                <span class="fa fa-star checked"></span>
+	                                <span class="fa fa-star checked"></span>
+	                                <span class="fa fa-star"></span>
+	                            </div>
+	                        </div>
+	                        <p>Прекрасное качество. Очень приятная расцветка. Материал хорош на ощупь. Не линяет при стирке.</p>
+	                        <small>15/08/2020</small>
+	                    </div>
+	                    <div class="text-right mt-4 d-block">
+	                        <a href=""> <img src="/assets/i/round.png" alt="" class="mr-2"> Посмотреть еще отзывы</a>
+	                    </div>
+	                    <div class="Feedback">
+	                        <form action="">
+	                            <div class="col px-0 d-block">
+	                                <input type="text" class="form-control my-4" id="usr" placeholder="Имя">
+	                                <div class="invalid-feedback">
+	                                    Please select a valid state.
+	                                </div>
+	                            </div>
+	                            <div class="col px-0 d-block">
+	                                <input type="text" class="form-control " id="usr" placeholder="Email">
+	                                <div class="invalid-feedback">
+	                                    Please select a valid state.
+	                                </div>
+	                            </div> 
+	                            <div class="col rating_comments text-left mt-4 d-flex align-items-center"> <span class="mr-3 pr-2 gray">Рейтинг </span> 
+	                                <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+	                                </div>   
+	                            </div>
+	                            <div class="col px-0 mt-4 d-block"> 
+	                                <textarea class="form-control p-3" name="" id="" cols="30" rows="3" placeholder="Текст"></textarea>
+	                                <div class="invalid-feedback">  
+	                                    Please select a valid state.  
+	                                </div> 
+	                            </div> 
+	                            <div class="d-block">
+	                                <small>* Нажав на кнопку Вы даете согласие на обработку Ваших персональных данных</small> 
+	                            </div> 
+	                    
+	                            <div class="d-block px-3 mt-3">
+	                                <a href="" class="btn ">Отправить</a>  
+	                            </div> 
+	                        </form> 
+	                    </div>
 	                </div>
 	            </div>
 	        </div>

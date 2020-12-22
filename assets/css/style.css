@@ -1814,6 +1814,10 @@ h2 {
     footer .btn-blue {
         font-size: 10px !important;
     }
+
+    .bg-blue {
+        margin-top: 0px !important;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1832,6 +1836,10 @@ h2 {
 
     .slider .btn {
         font-size: 95%;
+    }
+
+    .bg-blue {
+        margin-top: 0px !important;
     }
 }
 
@@ -1874,6 +1882,10 @@ h2 {
     .foot-img {
         width: 120px !important;
     }
+
+    .bg-blue {
+        margin-top: 0px !important;
+    }
 }
 
 a {
@@ -1883,6 +1895,11 @@ a {
 a:hover {
     text-decoration: none;
     color: #014B85;
+}
+
+.bg-blue {
+    margin-top: 65px;
+    background: #00c1f628;
 }
 
 .relative {
@@ -2264,8 +2281,14 @@ footer a:hover {
     color: #fff !important;
 }
 
-.category {
-    margin-top: 60px;
+.breadcrumb {
+    background-color: transparent;
+    font-size: 12px;
+}
+
+.breadcrumb a {
+    text-decoration: underline;
+    font-size: 12px;
 }
 
 .category h2 {
@@ -2330,7 +2353,8 @@ ul.oglavl li span {
     margin: 0;
 }
 
-ul.oglavl li span.text, ul.oglavl li span.page {
+ul.oglavl li span.text,
+ul.oglavl li span.page {
     bottom: -5px;
 }
 
@@ -2346,8 +2370,8 @@ ul.oglavl span.page {
     padding-left: 2px;
 }
 
-.product_item {
-    margin-top: 60px;
+.product_item h2 {
+    border-bottom: 1px solid #00BFF6;
 }
 
 .product_item .img_absolute {
@@ -2546,6 +2570,79 @@ ul.oglavl span.page {
     color: #000;
 }
 
+.product_item .buy .btn-buy {
+    color: #014B85;
+    text-decoration: underline;
+}
+
+.product_item .buy .btn {
+    font-size: 18px;
+}
+
+.product_item .nav-pills {
+    border-bottom: 1px solid #00BFF6;
+}
+
+.product_item .rating_comments .rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    position: relative;
+}
+
+.product_item .rating_comments .rating > input {
+    display: none;
+}
+
+.product_item .rating_comments .rating > label {
+    position: relative;
+    width: 1em;
+    font-size: 35px;
+    color: #00BFF6;
+    cursor: pointer;
+}
+
+.product_item .rating_comments .rating > label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+
+.product_item .rating_comments .rating > label:hover:before,
+.product_item .rating_comments .rating > label:hover ~ label:before {
+    opacity: 1 !important;
+}
+
+.product_item .rating_comments .rating > input:checked ~ label:before {
+    opacity: 1;
+}
+
+.product_item .rating_comments .rating:hover > input:checked ~ label:before {
+    opacity: 0.4;
+}
+
+.product_item .nav-pills .nav-link.active,
+.product_item .nav-pills .show > .nav-link {
+    background-color: #fff;
+    color: #00BFF6;
+    font-family: Roboto;
+    border-left: 1px solid #00BFF6;
+    border-top: 1px solid #00BFF6;
+    border-right: 1px solid #00BFF6;
+    border-radius: 0px;
+}
+
+.product_item .nav-pills .nav-link {
+    font-family: Roboto;
+}
+
 .product_item .question a {
     color: red;
     text-decoration: underline;
@@ -2569,7 +2666,166 @@ ul.oglavl span.page {
 }
 
 .product_item .link a:hover .gray,
-    .product_item .link a:hover a,
-    .product_item .link a:hover i {
+  .product_item .link a:hover a,
+  .product_item .link a:hover i {
     color: #ea5788 !important;
+}
+
+input,
+textarea {
+    border-color: #00BFF6;
+}
+
+input,
+.form-control {
+    border-color: #00bff6;
+}
+
+.cart h2 {
+    border-bottom: 1px solid #00bff6;
+}
+
+.cart h5 {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2px;
+    text-align: left;
+}
+
+.cart .old {
+    color: #ccc;
+    text-decoration: line-through;
+    font-size: 98%;
+}
+
+.cart .form-control {
+    max-width: 400px;
+}
+
+.cart .old {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.cart .color {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 18px;
+    height: 18px;
+}
+
+.cart .color img {
+    vertical-align: baseline !important;
+}
+
+.cart .size {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.cart .cart_mobile h5 {
+    padding-right: 18px;
+}
+
+.cart .cart_mobile .size {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.cart .cart_mobile .old {
+    text-decoration: line-through;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: left;
+    color: #707070;
+}
+
+.cart .cart_mobile .close {
+    position: absolute;
+    right: 15px;
+    top: -3px;
+    z-index: 88;
+}
+
+.cart .cart_mobile .close:hover {
+    cursor: pointer;
+}
+
+.cart .stepper {
+    border-radius: 5px;
+}
+
+.cart .cart-descriptions .sum .black {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.cart .cart-descriptions .sum_figure {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.cart .cart-descriptions .sum .gray {
+    color: #ccc;
+}
+
+.cart .line_gray {
+    border-top: 1px solid #ccc;
+}
+
+.cart .line {
+    border-top: 1px solid #fff;
+}
+
+.cart h2 {
+    font-size: 25px;
+}
+
+.cart form {
+    width: 100%;
+}
+
+.cart .data .form-control {
+    width: 100% !important;
+    max-width: 1200px;
+    background: #fff;
+}
+
+.cart .data .mt-12 {
+    margin-top: -2rem;
+}
+
+.cart .data .green {
+    font-weight: 300;
+    font-size: 11px;
+    color: green;
+    margin-top: -5px;
+}
+
+.cart .data .gray {
+    font-family: "Montserrat Alternates";
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+    color: #707070;
+}
+
+.cart .data .gray p {
+    margin-bottom: 0;
+}
+
+.cart .custom-control-label:hover {
+    cursor: pointer;
 }
